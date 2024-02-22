@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  qualys-cs:
+  - apiVersion: v2
+    created: "2024-02-22T08:03:31.13701035Z"
+    dependencies:
+    - alias: clusterSensor
+      condition: clusterSensor.enabled
+      name: cluster-sensor
+      repository: file://../cluster-sensor
+      version: 1.0.0
+    - alias: qcsSensor
+      condition: qcsSensor.enabled
+      name: qcs-sensor
+      repository: file://../qcs-sensor
+      version: 1.10.0
+    description: parent helm chart to deploy all sensor
+    digest: 73f0bd9826f162c17c507fbfef4b649218546cabd6810ce1bdbdb5542d83049b
+    name: qualys-cs
+    type: application
+    urls:
+    - qualys-cs-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-02-22T08:03:31.132245543Z"
